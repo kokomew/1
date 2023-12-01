@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head> <title> kokomew </title>
+<script type="text/Javascript">
+function c2()
+{
+	document.write("<h1>Happy Birthday, Perun!</h1> <img src=cat.jpg height=250px width=240px>");
+	window.document.bgColor="lavender";
+}
+function c3()
+{
+	document.write("<p style=font-size:50px> I love u <3 </p> <img src=cat2.gif height=250px width=240px>");
+	window.document.bgColor="#FAFFC7";
+}
+function c1(param1)
+{
+if(param1=="Wrong")
+{
+	alert("WRONG!");
+}
+else if(param1=="Right")
+{
+	document.getElementById("button1").hidden=false;
+	document.getElementById("button2").hidden=false;
+	document.getElementById("button3").hidden=false;
+	document.getElementById("lable2").hidden=false;
+	document.getElementById("lable1").hidden=true;
+	document.getElementById("button34").hidden=true;
+	document.getElementById("button1717").hidden=true;
+}
+else if(param1=="one")
+{
+	document.write("<p style=font-size:50px> KYS LOSER!</p> <img src=cat3.gif height=250px width=240px>");
+	window.document.bgColor="#B2AC88";
+}
+}
+</script>
+<style>
+	body{font-family:;background-color:skyblue;font-size:40px}
+	input{border:solid;font-size:40px}
+</style>
+</head>
+<body>
+<div id="lable1">17 x 2 = ?</div>
+<br>
+<input type="button" value="34" id='button34' onClick="c1('Wrong')">
+<br>
+<br>
+<input type="button" value="1717" id='button1717' onClick="c1('Right')">
+<br>
+<br>
+<div id="lable2" hidden="true">2 truths and a lie!</div>
+<br>
+<input type="button" value="1" id='button1' onClick="c1('one')" hidden=true>
+<br>
+<br>
+<input type="button" value="2" id='button2' onClick="c2()" hidden=true>
+<br>
+<br>
+<input type="button" value="3" id='button3' onClick="c3()" hidden=true>
+</body>
+</html>
+
+
+
